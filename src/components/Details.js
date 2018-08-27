@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import axios from 'axios';
 
 import './Details.css';
@@ -26,11 +27,11 @@ class Details extends Component {
   render() { 
     return (
       <div className='details'>
-        "{this.state.review.body}"<br/><br/>
-        -{this.state.review.author}
+        <p>"{this.state.review.body}"</p>
+        <p>-{this.state.review.author}</p>
       </div>
     );
   }
 }
  
-export default Details;
+export default withRouter(Details);

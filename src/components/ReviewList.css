@@ -14,3 +14,12 @@ h1 {
   text-shadow: black 0.12em 0.1em 0.1em;
   font-weight: bold;
 }
+
+h2 {
+  font-family: cursive;
+  font-size: 1.8rem;
+  text-shadow: black 0.12em 0.1em 0.1em;
+  color: whitesmoke;
+  font-weight: bold;
+  margin-top: 0;
+}

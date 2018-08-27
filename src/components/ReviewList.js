@@ -25,6 +25,7 @@ class ReviewList extends Component {
     return (
       <div className='reviews'>
         <h1>No Legacy is so rich as honesty</h1>
+        <h2>A review site dedicated to the works of Shakespeare</h2>
         {this.state.results.map(review => (
           <Review review={review} key={review.id} />
         ))}

@@ -24,7 +24,7 @@ class Details extends Component {
   render() { 
     return (
       <div>
-        <h1>Hello</h1>
+        <h1>Review Details</h1>
         {this.state.review.body}
         {this.state.review.author}
       </div>

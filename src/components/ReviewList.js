@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Review from './Review';
 import axios from 'axios';
 
+import './ReviewList.css'
+
 class ReviewList extends Component {
   state = {
     results: []
@@ -21,7 +23,8 @@ class ReviewList extends Component {
 
   render() { 
     return (
-      <div>
+      <div className='reviews'>
+        <h1>No Legacy is so rich as honesty</h1>
         {this.state.results.map(review => (
           <Review review={review} key={review.id} />
         ))}

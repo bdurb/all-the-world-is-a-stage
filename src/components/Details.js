@@ -29,6 +29,7 @@ class Details extends Component {
       <div className='details'>
         <p>"{this.state.review.body}"</p>
         <p>-{this.state.review.author}</p>
+        <button onClick={() => {this.props.history.push('/')}}>Back</button>
       </div>
     );
   }

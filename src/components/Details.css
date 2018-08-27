@@ -9,11 +9,17 @@
   font-family: cursive;
   font-size: 3.2rem;
   font-weight: bold;
-  opacity: .65;
+  opacity: .85;
 }
 
 p {
   color: black;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+button {
+  height: 30px;
+  width: 80px;
+  margin-bottom: 20px;
 }

@@ -21,11 +21,31 @@ class ReviewList extends Component {
     })
   }
 
+  handleLowestSort = () => {
+    let resultsCopy = [...this.state.results]
+    resultsCopy.sort((a, b) => {
+      return a.rating - b.rating
+    })
+    this.setState({results: resultsCopy})
+  }
+
+  handleHighestSort = () => {
+    let resultsCopy = [...this.state.results]
+    resultsCopy.sort((a, b) => {
+      return b.rating - a.rating
+    })
+    this.setState({results: resultsCopy})
+  }
+
   render() { 
     return (
       <div className='reviews'>
         <h1>No Legacy is so rich as honesty</h1>
         <h2>A review site dedicated to the works of Shakespeare</h2>
+        <div className='buttons'>
+          <button onClick={this.handleLowestSort}>Lowest First</button>
+          <button onClick={this.handleHighestSort}>Highest First</button>
+        </div>
         {this.state.results.map(review => (
           <Review review={review} key={review.id} />
         ))}

@@ -1,0 +1,20 @@
+
+.review-link {
+  background: lightgray;
+  border-radius: 2px;
+  height: 50px;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  opacity: .90;
+  -webkit-box-shadow: 0 3px 2px #777;
+	-moz-box-shadow: 0 3px 2px #777;
+	box-shadow: 0 3px 2px #777;
+}
+
+.review-link:hover {
+  background-color: gray;
+  color: white;
+}

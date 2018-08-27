@@ -1,0 +1,12 @@
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+  font-family: cursive;
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-shadow: black 0.1em 0.1em 0.1em
+}

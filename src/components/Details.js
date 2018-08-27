@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import './Details.css';
+
 class Details extends Component {
   constructor(props) {
     super(props);
@@ -23,10 +25,9 @@ class Details extends Component {
 
   render() { 
     return (
-      <div>
-        <h1>Review Details</h1>
-        {this.state.review.body}
-        {this.state.review.author}
+      <div className='details'>
+        "{this.state.review.body}"<br/><br/>
+        -{this.state.review.author}
       </div>
     );
   }

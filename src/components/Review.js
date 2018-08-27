@@ -11,7 +11,7 @@ const Review = (props) => {
         state: props.review
       }} >
       <div className='review-link'>
-        <p>{props.review.rating}</p>
+        <p>Rating: {props.review.rating}</p>
         <p>{props.review.author}</p>
       </div>
     </Link>

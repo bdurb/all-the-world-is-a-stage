@@ -3,7 +3,6 @@ import axios from 'axios';
 
 class Details extends Component {
   constructor(props) {
-    console.log(props)
     super(props);
     this.state = {
       review: {}

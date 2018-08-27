@@ -9,7 +9,7 @@
   font-family: cursive;
   font-size: 3.2rem;
   font-weight: bold;
-  opacity: .85;
+  opacity: .90;
 }
 
 p {
@@ -22,4 +22,9 @@ button {
   height: 30px;
   width: 80px;
   margin-bottom: 20px;
+}
+
+button:hover {
+  color: white;
+  background-color: gray;
 }

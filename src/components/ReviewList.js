@@ -40,7 +40,7 @@ class ReviewList extends Component {
   render() { 
     return (
       <div className='reviews'>
-        <h1>No Legacy is so rich as honesty</h1>
+        <h1>No Legacy is so Rich as Honesty</h1>
         <h2>A review site dedicated to the works of Shakespeare</h2>
         <div className='buttons'>
           <button className='lowest-button' onClick={this.handleLowestSort}>Lowest</button>

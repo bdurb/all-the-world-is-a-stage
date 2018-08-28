@@ -43,7 +43,7 @@ class ReviewList extends Component {
         <h1>No Legacy is so rich as honesty</h1>
         <h2>A review site dedicated to the works of Shakespeare</h2>
         <div className='buttons'>
-          <button onClick={this.handleLowestSort}>Lowest</button>
+          <button className='lowest-button' onClick={this.handleLowestSort}>Lowest</button>
           <button onClick={this.handleHighestSort}>Highest</button>
         </div>
         {this.state.results.map(review => (
